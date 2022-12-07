@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 //connexion à la base de données
-mongoose.connect('mongodb://localhost:27017/db');
+mongoose.connect('mongodb://localhost:27017/Cup');
 
 mongoose.connection.on("error", () => {
   console.log("Erreur lors de la connexion à la base de données");
@@ -29,8 +29,8 @@ let TeaCupSchema = mongoose.Schema({
 //  pseudo: String,
 // })
 
-let Tea = mongoose.model("tea", TeaCupSchema)
+let Tea = mongoose.model("Tea", TeaCupSchema)
 
 // let User = mongoose.model("User", UserSchema)
 
-export default Tea;
+export default database;
