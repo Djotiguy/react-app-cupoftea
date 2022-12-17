@@ -1,17 +1,9 @@
 import './App.css';
 import Formulaire from './components/Formulaire';
 import {useEffect, useState} from 'react';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 function App() {
-
-  // const [liste, setListe] = useState([]);
-  // useEffect(() => {
-  //   fetch('/courses')
-  //     .then(response => response.json())
-  //     .then(res => {
-  //       setListe(res);
-  //     })
-
-  // }, [])
 
   const [teas, setTeas] = useState([]);
 
@@ -26,10 +18,12 @@ function App() {
 
   return (
     <>
+    <Header />
     <Formulaire />
     <ul>
     {teas.map((t, i) => <li key={i}>{t}</li>)}
    </ul>
+   <Footer />
    </>
   )
 }
