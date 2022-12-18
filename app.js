@@ -62,8 +62,7 @@ let Tea = mongoose.model("Tea", TeaCupSchema);
 // })
 
 
-
-
+// routes
 app.get("/courses", (req, res) => {
   console.log("Connected to React");
   // let liste = ['pain', 'boursin'];
@@ -86,7 +85,8 @@ app.post("/form", (req, res) =>{
 
   newTea.save( console.log('tea added'));
 })
-  
+
+// Connexion au server
 const PORT = process.env.PORT || 8080;
   
 app.listen(PORT, console.log(`Server started on port ${PORT}`));

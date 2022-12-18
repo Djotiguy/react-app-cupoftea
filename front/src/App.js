@@ -1,7 +1,6 @@
-import './App.css';
-import Formulaire from './components/Formulaire';
 import {useEffect, useState} from 'react';
 import Header from './components/layout/Header';
+import Home from './components/Home';
 import Footer from './components/layout/Footer';
 function App() {
 
@@ -19,7 +18,7 @@ function App() {
   return (
     <>
     <Header />
-    <Formulaire />
+    <Home />
     <ul>
     {teas.map((t, i) => <li key={i}>{t}</li>)}
    </ul>
