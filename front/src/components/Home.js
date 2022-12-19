@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const Home = () =>{
     return (
     <>
@@ -52,8 +53,10 @@ const Home = () =>{
                 <section className="price">
                     <p>À partir de <strong>8,50€</strong></p>
                 </section>
-                <a className="btn" href="#">Voir ce produit</a>
-            </article>
+                <NavLink to="/teaProduct">
+                <a className="btn" >Voir ce produit</a>
+				</NavLink>            
+                </article>
 
             <article id="best">
                 <h2><span>Notre best-seller</span></h2>
@@ -63,8 +66,10 @@ const Home = () =>{
                 <section className="price">
                     <p>À partir de <strong>7,60€</strong></p>
                 </section>
-                <a className="btn" href="#">Voir ce produit</a>
-            </article>
+                <NavLink to="/teaProduct">
+                <a className="btn" >Voir ce produit</a>
+				</NavLink>            
+                </article>
 
             <article id="crush">
                 <h2><span>Notre coup de coeur</span></h2>
@@ -74,7 +79,9 @@ const Home = () =>{
                 <section className="price">
                     <p>À partir de <strong>9,00€</strong></p>
                 </section>
-                <a className="btn" href="product.html">Voir ce produit</a>
+                <NavLink to="/teaProduct">
+                <a className="btn" >Voir ce produit</a>
+				</NavLink>	
             </article>
 
         </section>

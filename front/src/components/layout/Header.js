@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
 	return(
@@ -6,18 +7,23 @@ const Header = () => {
 			<section id="topbar">Livraison offerte à partir de 65€ d'achat !</section>
 			<div className="container">
 				<section id="logo">
-					<a href="home">
-						<img src="img/logo.png" alt="Logo de Cup of Tea" />
-					</a>
+				<NavLink to="/">
+					<img src="img/logo.png" alt="Logo de Cup of Tea" />
+				</NavLink>
 					<section id="cart">
 						<span>Mon panier</span>
 						<strong>42,00€</strong>
 					</section>
 				</section>
 				<nav>
-					<a href="listing-product.html">Thés</a>
+				<NavLink to="/tea">
+				Thés
+				</NavLink>
+
+				<NavLink to="/about">
+				Notre histoire
+				</NavLink>							
 					
-					<a href="about.html">Notre histoire</a>
 				</nav>
 			</div>
 		</header>
